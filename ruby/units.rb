@@ -25,4 +25,4 @@ class Numeric
 end
 
 puts 10.miles.back
-puts 2.feet.forward
+puts 2.feet.forwarg
