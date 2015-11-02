@@ -1,0 +1,3 @@
+fibnacci(1, 1)
+fibnacci(2, 1)
+fibnacci(X, Result) :- fibnacci(Y, Res1),fibnacci(Z, Res2), Y is X - 1, Z is X - 2, Result is Res1 + Res2

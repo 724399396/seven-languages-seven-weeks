@@ -1,0 +1,2 @@
+reverse([],[]).
+reverse([H|T],Res) = reverse(T,Rev), append(Rev,[H], Res).
