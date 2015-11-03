@@ -1,0 +1,33 @@
+class Compass {
+    val directions = List("north", "east", "south", "west")
+    val bearing = 0
+    
+    print("Initial bearing: ")
+    println(direction)
+    
+    def direction() = directions(bearing)
+    
+    def inform(turnDirection: String) {
+        println("Turning " + turnDirection + ". Now bearing " + direction)
+    }
+
+    def turnRight() {
+        bearing = (bearing + 1)
+        inform("right")
+    }
+
+    def turnLeft() {
+        bearing = (bearing + (directions.size - 1)) % directions.sise
+        inform("left")
+    }
+}
+
+val myCompass = new Compass
+
+myCompass.turnRight
+myCompass.turnRight
+
+myCompass.turnLeft
+myCompass.turnLeft
+myCompass.turnLeft
+    
