@@ -6,7 +6,7 @@ sudoku(Puzzle, Solution) :-
               S41,S42,S43,S44],
     fd_domain(Puzzle, 1, 4).
 
-    
+   
 
 valid([]).
 valid([Head|Tail]) :-
